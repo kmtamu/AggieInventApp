@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--
+<form name="search" action="/fetch" method="get">
+Search: <input type="text" name="searchbox">
+<input type="submit" value="Submit">
+</form>
+
+</br>
+</br>
+</br>
+-->
+
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myFile").value;
+    document.getElementById("demo").innerHTML = x;
+     return x;
+}
+</script>
+<!--  -->
+<form action="/getfile" method="post">
+    <input type="file" name="myFile" size="50"><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+<ul class="menu">
+    <li><a href="http://127.0.0.1:5000/fetch">view1</a></li>
+  </ul>
+</body>
+</html>
